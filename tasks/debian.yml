@@ -1,0 +1,10 @@
+---
+- name: "Install sops <= 3.4.0"
+  when: sops_version is defined and sops_version <= "3.4.0"
+  apt:
+      deb: https://github.com/mozilla/sops/releases/download/{{ sops_version }}/sops_{{ sops_version }}_amd64.deb
+
+- name: "Install sops > 3.4.0"
+  when: sops_version is defined and sops_version > "3.4.0"
+  apt:
+    deb: https://github.com/mozilla/sops/releases/download/v{{ sops_version }}/sops_{{ sops_version }}_amd64.deb
