@@ -1,4 +1,5 @@
 ---
+# See https://github.com/jvautier/project-cli
 fullname: jvautier/ansible-role-sops
 description: Install sops through ansible
 tags:
