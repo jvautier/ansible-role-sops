@@ -1,0 +1,8 @@
+---
+fullname: jvautier/ansible-role-sops
+description: Install sops through ansible
+tags:
+  - ansible
+  - ansible-role
+  - sops
+github: {}
